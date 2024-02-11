@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\AddAttendanceView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddBookingView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddClassesView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddClientView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddDiscountView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddEmployeesView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddEquipmentView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddFeedbackView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddMessageView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddOrdersView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddPassView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddPayView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddProductsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddSuppliersView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddTrainersView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AttendanceView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\BookingView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ClassesView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ClientView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\DiscountView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\EmployeesView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\EquipmentView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\FeedbackView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MessageView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\OrdersView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PassView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PayView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ProductsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\RaportOcenaView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\RaportSprzedazyView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\RaportWynikuView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SuppliersView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\TrainersView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddAttendanceView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddBookingView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddClassesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddClientView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddDiscountView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddEmployeesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddEquipmentView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddFeedbackView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddMessageView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddOrdersView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddPassView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddPayView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddProductsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddSuppliersView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddTrainersView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AttendanceView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\BookingView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ClassesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ClientView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DiscountView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EmployeesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EquipmentView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\FeedbackView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MainWindowResources.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MessageView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\OrdersView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PassView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PayView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ProductsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\RaportOcenaView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\RaportSprzedazyView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\RaportWynikuView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\StyleZakladekDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SuppliersView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TrainersView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

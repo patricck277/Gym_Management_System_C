@@ -1,0 +1,85 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\client.png" />
+    <None Remove="Views\24dp.png" />
+    <None Remove="Views\icon\add.png" />
+    <None Remove="Views\icon\attendance.png" />
+    <None Remove="Views\icon\beverages.png" />
+    <None Remove="Views\icon\booking.png" />
+    <None Remove="Views\icon\boxes.png" />
+    <None Remove="Views\icon\cancel.png" />
+    <None Remove="Views\icon\cargo.png" />
+    <None Remove="Views\icon\client.png" />
+    <None Remove="Views\icon\delete.png" />
+    <None Remove="Views\icon\discount.png" />
+    <None Remove="Views\icon\employees.png" />
+    <None Remove="Views\icon\equipment.png" />
+    <None Remove="Views\icon\feedback.png" />
+    <None Remove="Views\icon\hantel.png" />
+    <None Remove="Views\icon\male.png" />
+    <None Remove="Views\icon\message.png" />
+    <None Remove="Views\icon\modify.png" />
+    <None Remove="Views\icon\pass.png" />
+    <None Remove="Views\icon\refresh.png" />
+    <None Remove="Views\icon\save.png" />
+    <None Remove="Views\icon\saveandclose.png" />
+    <None Remove="Views\icon\wallet.png" />
+    <None Remove="Views\icon\yoga.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Context\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MvvmLight" Version="5.4.1.1" />
+    <PackageReference Include="Syncfusion.SfInput.WPF" Version="23.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Views\icon\add.png" />
+    <Resource Include="Views\icon\attendance.png" />
+    <Resource Include="Views\icon\beverages.png" />
+    <Resource Include="Views\icon\booking.png" />
+    <Resource Include="Views\icon\boxes.png" />
+    <Resource Include="Views\icon\cancel.png" />
+    <Resource Include="Views\icon\cargo.png" />
+    <Resource Include="Views\icon\client.png" />
+    <Resource Include="Views\icon\delete.png" />
+    <Resource Include="Views\icon\discount.png" />
+    <Resource Include="Views\icon\employees.png" />
+    <Resource Include="Views\icon\equipment.png" />
+    <Resource Include="Views\icon\feedback.png" />
+    <Resource Include="Views\icon\hantel.png" />
+    <Resource Include="Views\icon\male.png" />
+    <Resource Include="Views\icon\message.png" />
+    <Resource Include="Views\icon\modify.png" />
+    <Resource Include="Views\icon\pass.png" />
+    <Resource Include="Views\icon\refresh.png" />
+    <Resource Include="Views\icon\save.png" />
+    <Resource Include="Views\icon\saveandclose.png" />
+    <Resource Include="Views\icon\wallet.png" />
+    <Resource Include="Views\icon\yoga.png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="Firma.Views.RaportOcenaView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Firma.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="LightGray" VerticalAlignment="Center" HorizontalAlignment="Center" Height="202">
+        <StackPanel Margin="8,8,8,10" Background="Azure" Width="380">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="33"/>
+                    <RowDefinition Height="33"/>
+                    <RowDefinition Height="33"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="18.5"/>
+                    <RowDefinition Height="14.5"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Content="Calculate the average rating of a trainer" Margin="3,3,3,3" HorizontalContentAlignment="Center"/>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Content="From" Margin="3" HorizontalContentAlignment="Center"/>
+                    <DatePicker Grid.Column="1" Margin="3" SelectedDate="{Binding DataOd}"/>
+                    <Label Grid.Column="2" Content="To" Margin="3" HorizontalContentAlignment="Center"/>
+                    <DatePicker Grid.Column="3" Margin="3" SelectedDate="{Binding DataDo}"/>
+
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Content="Select Trainer:" Margin="3" HorizontalContentAlignment="Right"  />
+                    <ComboBox Grid.Column="1" Margin="3" ItemsSource="{Binding OcenaComboBoxItems}" DisplayMemberPath="Value" SelectedValuePath="Key" SelectedValue="{Binding Path=IdTrener,Mode=TwoWay}"/>
+                </Grid>
+                <Button Grid.Row="3" Margin="3,3,3,3" Content="Calculate" Command="{Binding ObliczCommand}"/>
+                <Grid Grid.Row="4" Grid.RowSpan="2">
+                 
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Column="0" Content="Average score:" Margin="3" HorizontalContentAlignment="Right"  />
+                    <Label Grid.Column="1" Margin="3" HorizontalContentAlignment="Left" Content="{Binding Utarg}"/>
+                </Grid>
+                
+            </Grid>
+        </StackPanel>
+    </Grid>
+</UserControl>

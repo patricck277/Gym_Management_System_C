@@ -1,0 +1,249 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vm="clr-namespace:Firma.ViewModels"
+                    xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+                    xmlns:vw="clr-namespace:Firma.Views"
+                    >
+
+    <!--tu bedziemy laczyc View z ViewModel zakładek-->
+    <DataTemplate DataType="{x:Type vm:ClientViewModel}">
+        <vw:ClientView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:PassViewModel}">
+        <vw:PassView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:PayViewModel}">
+        <vw:PayView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:TrainersViewModel}">
+        <vw:TrainersView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:ClassesViewModel}">
+        <vw:ClassesView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AttendanceViewModel}">
+        <vw:AttendanceView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:BookingViewModel}">
+        <vw:BookingView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:DiscountViewModel}">
+        <vw:DiscountView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:EmployeesViewModel}">
+        <vw:EmployeesView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:EquipmentViewModel}">
+        <vw:EquipmentView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:FeedbackViewModel}">
+        <vw:FeedbackView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:MessageViewModel}">
+        <vw:MessageView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:OrdersViewModel}">
+        <vw:OrdersView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:ProductsViewModel}">
+        <vw:ProductsView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:SuppliersViewModel}">
+        <vw:SuppliersView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddClientViewModel}">
+        <vw:AddClientView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddAttendanceViewModel}">
+        <vw:AddAttendanceView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddBookingViewModel}">
+        <vw:AddBookingView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddClassesViewModel}">
+        <vw:AddClassesView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddDiscountViewModel}">
+        <vw:AddDiscountView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddEmployeesViewModel}">
+        <vw:AddEmployeesView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddEquipmentViewModel}">
+        <vw:AddEquipmentView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddFeedbackViewModel}">
+        <vw:AddFeedbackView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddMessageViewModel}">
+        <vw:AddMessageView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddOrdersViewModel}">
+        <vw:AddOrdersView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddPassViewModel}">
+        <vw:AddPassView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddProductsViewModel}">
+        <vw:AddProductsView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddSuppliersViewModel}">
+        <vw:AddSuppliersView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddPayViewModel}">
+        <vw:AddPayView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddTrainersViewModel}">
+        <vw:AddTrainersView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:RaportSprzedazyViewModel}">
+        <vw:RaportSprzedazyView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:RaportWynikuViewModel}">
+        <vw:RaportWynikuView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:RaportOcenaViewModel}">
+        <vw:RaportOcenaView/>
+    </DataTemplate>
+
+
+
+
+    <!--tu jest koniec laczenia View z ViewModel zakładek-->
+
+    <Style x:Key="MainHCCStyle" TargetType="{x:Type HeaderedContentControl}">
+        <Setter Property="HeaderTemplate">
+            <Setter.Value>
+                <DataTemplate>
+   
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <!-- 
+        This template ensures that content of a HeaderedContentControl 
+        fills the available vertical space. 
+        -->
+                <ControlTemplate TargetType="{x:Type HeaderedContentControl}">
+                    
+                    <DockPanel>
+                        <ContentPresenter 
+              DockPanel.Dock="Top"
+              ContentSource="Header" 
+              ContentTemplate="{TemplateBinding HeaderTemplate}" 
+              />
+                        <ContentPresenter 
+              ContentSource="Content" 
+              ContentTemplate="{TemplateBinding ContentTemplate}" 
+              />
+                    </DockPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--
+  This style ensures that the borders in the main window are consistent.
+  -->
+    <Style x:Key="MainBorderStyle" TargetType="{x:Type Border}">
+        <Setter Property="Background" Value="white" />
+        <Setter Property="BorderBrush" Value="LightGray" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="CornerRadius" Value="5" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+    </Style>
+
+    <!--
+  This template explains how to render the list of commands on the left
+  side in the main window (the 'Control Panel' area).
+  -->
+    <DataTemplate x:Key="CommandsTemplate">
+        <ItemsControl IsTabStop="False" ItemsSource="{Binding}" Margin="6,2">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Button Content="{Binding DisplayName}" Command="{Binding Path=Command}" 
+                        Margin="6" Padding="5" 
+                        BorderThickness="1" 
+                        BorderBrush="Black" Foreground="Black"
+                        FontSize="14" FontWeight="Bold">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="LightGray"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Background="{TemplateBinding Background}"
+                                                BorderBrush="{TemplateBinding BorderBrush}"
+                                                BorderThickness="{TemplateBinding BorderThickness}"
+                                                CornerRadius="5">
+                                                <ContentPresenter HorizontalAlignment="Center"
+                                                              VerticalAlignment="Center"
+                                                              Content="{TemplateBinding Content}"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <!-- Zmiana koloru tła na jaśniejszy, gdy mysz jest nad przyciskiem -->
+                                        <Setter Property="Background" Value="LightSkyBlue"/>
+                                        <!-- Możesz także dodać efekt cienia dla lepszego podświetlenia -->
+                                        <Setter Property="Effect">
+                                            <Setter.Value>
+                                                <DropShadowEffect Color="Gray" BlurRadius="10" Opacity="0.8"/>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </DataTemplate>
+
+
+    <!-- 
+  This template explains how to render 
+  a tab item with a close button.
+  -->
+    <DataTemplate x:Key="ClosableTabItemTemplate">
+        <DockPanel Width="120">
+            <Button 
+        Command="{Binding Path=CloseCommand}"
+        Content="X"
+        Cursor="Hand"
+        DockPanel.Dock="Right"
+        Focusable="False"
+        FontFamily="Courier" 
+        FontSize="9"
+        FontWeight="Bold"  
+        Margin="0,1,0,0"
+        Padding="0"
+        VerticalContentAlignment="Bottom"
+        Width="16" Height="16" 
+        />
+            <ContentPresenter 
+        Content="{Binding Path=DisplayName}" 
+        VerticalAlignment="Center" 
+        />
+        </DockPanel>
+    </DataTemplate>
+
+    <!--
+  This template explains how to render the 'Workspace' content area in the main window.
+  -->
+    <DataTemplate x:Key="WorkspacesTemplate">
+        <TabControl 
+      IsSynchronizedWithCurrentItem="True" 
+      ItemsSource="{Binding}" 
+      ItemTemplate="{StaticResource ClosableTabItemTemplate}"
+      Margin="4"
+      />
+    </DataTemplate>
+
+
+</ResourceDictionary>
